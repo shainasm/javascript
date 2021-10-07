@@ -1,5 +1,3 @@
-let name= new Promise((resolve,reject) => {
-  setTimeout(() => {
-    resolve("hii shaina");
-  },3000);
-});
+console.log("hello world")
+console.warn("hello world")
+console.error("hello world")

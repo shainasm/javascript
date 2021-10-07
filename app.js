@@ -1,7 +1,6 @@
-var arr = [1,2,3,4]
+const age = 33
 
-console.log(arr)
-arr.push(5)
-console.log(arr)
+console.log(age)
 
-console.log(arr.length)
+
+

@@ -1,6 +1,8 @@
 //strings
 console.log("hello world")
 console.warn('hello world')
+console.error('hello world')
+
 
 // consle is operator which is used to display on the console screen
 

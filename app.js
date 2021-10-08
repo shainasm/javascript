@@ -1,14 +1,22 @@
-var heading = document.getElementById('heading')
-var body = document.querySelector('body')
+var list = document.querySelector('ul')
+// this selected the ul from th html document 
 
-heading.innerHTML = "I was added by js"
-heading.style = "color:red;font-size:2rem"
+var arr = ['Go to the gym','Cook oatmeal','Eat']
 
-heading.classList.add('five')
-heading.classList.remove('one')
+arr.push('complete the assignment')
 
-body.classList.add('dark')
+console.log( 'length of the array:', arr.length)
 
-// .add to add a class to an element
-// .remove to remove a class from an element
-// classlist shows the list of classes the element  has.
+for (var i = 0; i < arr.length; i++) {
+  var element = document.createElement('li')
+// this created an li element in the html code
+  
+  var textNode = document.createTextNode(arr[i])
+// this created a textnode which contains the elements of the arr 
+
+  element.appendChild(textNode)
+// appendchild adds the textnode according to the for loop and displays it
+
+  list.appendChild(element)
+//this lists up the iteration on the o/p screen 
+}

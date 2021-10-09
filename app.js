@@ -1,22 +1,34 @@
-var list = document.querySelector('ul')
-// this selected the ul from th html document 
+// // function is a block of code which performs a specific function. parameters are the values which may or may not be passed to a function
 
-var arr = ['Go to the gym','Cook oatmeal','Eat']
+// function greet(Name='john',age=99) {
+//   console.log(Name, age)
+//   // console.log('hey '+ Name + '!! your age is '+ age)
+//   // console.log('Hello')
+// }
 
-arr.push('complete the assignment')
+// // calling function:-
 
-console.log( 'length of the array:', arr.length)
+// greet()
 
-for (var i = 0; i < arr.length; i++) {
-  var element = document.createElement('li')
-// this created an li element in the html code
-  
-  var textNode = document.createTextNode(arr[i])
-// this created a textnode which contains the elements of the arr 
+//function declaration:- 
 
-  element.appendChild(textNode)
-// appendchild adds the textnode according to the for loop and displays it
+// function add(a, b) {
+//   var sum = a + b
+//   return sum
+// }
 
-  list.appendChild(element)
-//this lists up the iteration on the o/p screen 
+// function expression:- (most prefferable)
+var add = function(a=0 , b=0){
+  var sum = a + b
+  return sum
 }
+
+console.log(add(10,20))
+
+// example for practise
+// var func = function(Name='john', age=99){
+//   var greet = Name + age
+//   return greet
+// }
+
+// console.log(func('shaina ', 19))

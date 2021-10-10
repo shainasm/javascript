@@ -1,30 +1,30 @@
-// function greet(Name='john',age=99) {
-//   console.log(Name, age)
-//   // console.log('hey '+ Name + '!! your age is '+ age)
-//   // console.log('Hello')
-// }
+// var arr=['go to the gym','cook oatmeal','eat']
 
-// // calling function:-
+// arr.push('sleep')
+// // for(var i=0; i < arr.length; i++) {
+// //   console.log(arr[i])
+// // }
 
-// greet()
+// // var callbackFunction = (element , index) => {
+// //   console.log(element , index)
+// // }
 
-//function declaration:- 
+// // another way of callback function
+// arr.forEach((element , index) => {
+//   console.log(element , index)
+// })
 
-// function add(a,b) {
-//   var sum = a + b
-//   return sum
-// }
+var button = document.querySelector('button')
+var input = document.querySelector('input')
+var list = document.querySelector('ul')
 
-// console.log(add(1,3))
+const callbackFunc= (event) => {
+  // console.log(input.value)
+  const inputValue = input.value
+  const element = document.createElement('li')
+  const textNode = document.createTextNode(inputValue)
+  element.appendChild(textNode)
+  list.appendChild(element)
+}
 
-// function expression:- (most prefferable)
-
-var add= (a=0,b=0) => a + b
-
-console.log(add(1,4))
-
-
-const greet = Name => 'Hii ' + Name
-
-console.log(greet('shaina'))
-
+button.addEventListener('click',callbackFunc)

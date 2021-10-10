@@ -1,5 +1,8 @@
-console.log('hello!')
-console.log(typeof'hello')
+var button = document.querySelector('button')
+var body = document.querySelector('body')
 
-console.log(1)
-console.log(typeof 1)
+const callbackFunc= (event) => {
+ body.classList.toggle('dark')
+}
+
+button.addEventListener('click',callbackFunc)

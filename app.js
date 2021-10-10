@@ -10,17 +10,21 @@
 
 //function declaration:- 
 
-// function add(a, b) {
+// function add(a,b) {
 //   var sum = a + b
 //   return sum
 // }
 
+// console.log(add(1,3))
+
 // function expression:- (most prefferable)
-var add = (a=0 , b=0) => {
-  var sum = a + b
-  return sum
-}
 
-console.log(add(10,20))
+var add= (a=0,b=0) => a + b
 
+console.log(add(1,4))
+
+
+const greet = Name => 'Hii ' + Name
+
+console.log(greet('shaina'))
 

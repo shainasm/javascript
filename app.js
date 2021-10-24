@@ -1,26 +1,10 @@
-// api stands for application programming interface
-// it is a bridge between the client and the server
-// it is used to fetch data from a server
+// PROMISE is an object. It can fulfilled, rejected or it can be pending. A PROMISE promises the user to return some value.
 
-// SCOPES:- it means range
-// let has a block scope. its scope is limited to the block it is declared in.
-// var has a global scope. that is var can be accessed throughout the file. but in function var doesn't have a global scope
-// (this.alert('hii')) will throw a message on the browser window saying hii. this is an object which points towards the parent object
+// setTimeout is a function which is a part of browser. It executes a task after a certain amount of time.
 
-/* create an object 'car' which has a name and a manufacturer. */
+setTimeout(() => {
+  console.log('shaina')
+}, 0);
 
-
-let car = {
-  name: "c class",
-  manufacturer: "mercedes",
-  print: () => {
-    // console.log(this.name + ' was manufactured by ' + this.manufacturer)
-    // instead of + and '' we can use:-
-    console.log(`${car.name} was manufactured by ${car.manufacturer}`)
-    /* this is called template string and it can pass a string and a varible at the same time*/
-  }
-}
-console.log(car)
-
-console.log(car.hasOwnProperty('name'))
-
+console.log('hii')
+console.log('hey')

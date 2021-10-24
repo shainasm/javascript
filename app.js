@@ -20,5 +20,7 @@ let car = {
     /* this is called template string and it can pass a string and a varible at the same time*/
   }
 }
+console.log(car)
 
-car.print()
+console.log(car.hasOwnProperty('name'))
+

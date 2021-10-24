@@ -2,9 +2,6 @@
 
 // setTimeout is a function which is a part of browser. It executes a task after a certain amount of time.
 
-setTimeout(() => {
-  console.log('shaina')
-}, 0);
+var data = fetch('https://jsonplaceholder.typicode.com/users')
 
-console.log('hii')
-console.log('hey')
+console.log(data)

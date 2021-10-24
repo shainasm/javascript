@@ -7,13 +7,18 @@
 // var has a global scope. that is var can be accessed throughout the file. but in function var doesn't have a global scope
 // (this.alert('hii')) will throw a message on the browser window saying hii. this is an object which points towards the parent object
 
-/* create an object 'student' which has a name and a class. */
-let student = {
-  n: "shaina",
-  c: " sybcs",
-  print: function() {
-    console.log(this);
-    console.log(this.n + this.c);
+/* create an object 'car' which has a name and a manufacturer. */
+
+
+let car = {
+  name: "c class",
+  manufacturer: "mercedes",
+  print: () => {
+    // console.log(this.name + ' was manufactured by ' + this.manufacturer)
+    // instead of + and '' we can use:-
+    console.log(`${car.name} was manufactured by ${car.manufacturer}`)
+    /* this is called template string and it can pass a string and a varible at the same time*/
   }
 }
-student.print()
+
+car.print()

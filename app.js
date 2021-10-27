@@ -1,7 +1,11 @@
-// PROMISE is an object. It can fulfilled, rejected or it can be pending. A PROMISE promises the user to return some value.
+// JAVASCRIPT UNDER THE HOOD
+// STACK IS A LIFO DATA STRUCTURE I.E LAST IN FIRST OUT 
 
-// setTimeout is a function which is a part of browser. It executes a task after a certain amount of time.
+setTimeout(() => {
+  console.log('timer 1')
+}, 0);
 
-var data = fetch('https://jsonplaceholder.typicode.com/users')
-
-console.log(data)
+for (var i = 0; i < 1000; i++) {
+ console.log(i)
+}
+// console log executes first until then settimeout waits in the callback queue, and then it executes after the console log have displayed
